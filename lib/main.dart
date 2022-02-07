@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_recipes_01/recipe.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'recipe_detail.dart';
 
 void main() {
@@ -20,8 +21,11 @@ class RecipeApp extends StatelessWidget {
       title: 'Recipe Calculator',
       // 5
       theme: theme.copyWith(
+        textTheme: GoogleFonts.sourceCodeProTextTheme(
+          Theme.of(context).textTheme,
+        ),
         colorScheme: theme.colorScheme.copyWith(
-          primary: Colors.grey,
+          primary: Colors.black,
           secondary: Colors.black,
         ),
       ),
@@ -113,11 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // 6
             Text(
               recipe.label,
-              style: const TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.w700,
-                fontFamily: 'Palatino',
-              ),
+              style: GoogleFonts.sourceCodePro(fontSize: 18),
             )
           ],
         ),

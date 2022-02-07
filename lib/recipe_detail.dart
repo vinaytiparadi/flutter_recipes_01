@@ -27,6 +27,7 @@ class _RecipeDetailState extends State<RecipeDetail> {
     return Scaffold(
         appBar: AppBar(
           title: Text(widget.recipe.label),
+          centerTitle: true,
         ),
     // 2
     body: SafeArea(
@@ -48,20 +49,26 @@ class _RecipeDetailState extends State<RecipeDetail> {
         // 6
         Text(
           widget.recipe.label,
-          style: const TextStyle(fontSize: 18),
+          style: const TextStyle(fontSize: 20),
         ),
+
+        const SizedBox(
+          height: 20.0,
+        ),
+
         // 7
         Expanded(
           // 8
           child: ListView.builder(
-            padding: const EdgeInsets.all(7.0),
+            padding: const EdgeInsets.all(20.0),
             itemCount: widget.recipe.ingredients.length,
             itemBuilder: (BuildContext context, int index) {
               final ingredient = widget.recipe.ingredients[index];
               // 9
               return Text('${ingredient.quantity * _sliderVal} '
                   '${ingredient.measure} '
-                  '${ingredient.name}');
+                  '${ingredient.name}',
+                    style: const TextStyle(fontSize: 18),);
             },
           ),
         ),
@@ -81,7 +88,7 @@ class _RecipeDetailState extends State<RecipeDetail> {
               });
             },
             // 14
-            activeColor: Colors.green,
+            activeColor: Colors.pinkAccent[200],
             inactiveColor: Colors.black,
           ),
 
