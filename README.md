@@ -1,10 +1,20 @@
 # flutter_recipes_01
 
-A new Flutter project.
+## Basic Recipe Calculator
+An app built using **Flutter** to learn the following widgets:
+- MaterialApp
+- Scaffold
+- Stateful
+- Stateless
+- Card
+- Slider and few more!
 
-## Getting Started
+## Showcase:
+<img width="600" alt="sampleimages" src="https://raw.githubusercontent.com/vinaytiparadi/flutter_recipes_01/main/assets/showcase.png">
 
-This project is a starting point for a Flutter application.
+## Want to contribute?
+
+Fork and make a PR :)
 
 A few resources to get you started if this is your first Flutter project:
 
