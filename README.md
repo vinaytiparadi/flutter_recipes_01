@@ -6,11 +6,14 @@ An app built using **Flutter** to learn the following widgets:
 - Scaffold
 - Stateful
 - Stateless
+- ListView
 - Card
 - Slider and few more!
 
 ## Showcase:
 <img width="600" alt="sampleimages" src="https://raw.githubusercontent.com/vinaytiparadi/flutter_recipes_01/main/assets/showcase.png">
+
+### [Download](https://github.com/vinaytiparadi/flutter_recipes_01/releases/tag/latest)
 
 ## Want to contribute?
 
